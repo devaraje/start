@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    //$( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>HTML5: Week One</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>HTML5: Week One</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">home</a></li>
+				<li> <a href="#">gallery</a></li>
+				<li> <a href="sign-up.html">Sign Up Here</a></li>
+				<li> <a href="#">Mobile Site</a></li>
+				<li> <a href="http://www.google.com">Google</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+            <h3>Please enter the following details to check room availability</h3>
+			<!-- A Simple Form    -->
+              <form action="#" method="post">
+                <fieldset>
+                  <ul>
+                    <li>
+                      <label id="first-name">First Name</label>
+                      <input type="text" name="first-name" placeholder="First Name" required pattern="^[a-zA-Z]+$">
+                    </li>
+                    <li>
+                      <label id="middle-initial">Middle Initial</label>
+                      <input type="text" name="middle-initial" placeholder="Middle Initial" pattern="^[a-zA-Z]?$">
+                    </li>
+                    <li>
+                      <label id="last-name">Last Name</label>
+                      <input type="text" name="last-name" placeholder="Last Name" pattern="^[a-zA-Z]+$" required>
+                    </li>
+                    <li>
+                      <input type="radio" name="gender" value="male">
+                      <label id="gender-m">Male</label>
+                      <input type="radio" name="gender" value="female">
+                      <label id="gender-f">Female</label>
+                    </li>
+                    <li>
+                      <label id="guests">Number of Guests</label>
+                      <input type="number" name="no-of-guests" value="1" placeholder="1" min="1" max="4"/>
+                    </li>
+                    <li>
+                      <label id="CheckIn">Check In</label>
+                      <input type="date" name="checkin-date" required/>
+                      <label id="CheckOut">Check Out</label>
+                      <input type="date" name="checkout-date" required/>
+                    </li>
+                    <li>
+                      <label>Price Range($150 - $400)</label>
+                      <input type="range" name="price" min="150" max="400" value=300>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="pets">
+                      <label id="pets">Pet friendly room</label>
+                    </li>
+                    <li>
+                      <label id="find-us">How did you hear about us?</label>
+                      <select name="find-us">
+                        <option value="friend">Friend</option>
+                        <option value="family">Family</option>
+                        <option value="website">Website</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </li>
+                    <li>
+                      <label>Email</label>
+                      <input type="email" name="email" required>
+                    </li>
+                    <li>
+                      <label>Phone</label>
+                      <input type="tel" name="usrtel" required pattern="[0-9]{10}">
+                    </li>
+                    <li>
+                      <label>Rate the website (0-10)</label>
+                      <input type="range" name="rate" min="0" max="10">
+                    </li>
+                  </ul>
+                  <input type="submit" value="Submit Now">
+                </fieldset>                          
+              </form>
+                       	
+
+        </div><!-- closing maincContent div tag -->
+		
+		
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2015</p>
+			
+		</footer>
+
+	</body>
+</html>
